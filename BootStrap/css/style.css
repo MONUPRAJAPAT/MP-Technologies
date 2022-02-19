@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Ubuntu&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.bg-darken , .btn-darken{
+    background: linear-gradient(45deg,black,darkslategrey);
+}
+
+/*-------------------------Landing Page------------------------------*/
+.fullscreen-landing{
+    background: whitesmoke url("../../img/background (2).jpg") no-repeat scroll center;
+    height: 100vh;
+    background-size: cover;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+}
+.fa-play-circle{
+    border: 3px solid transparent;
+    border-radius: 50%;
+    animation: glow-icon 0.8s infinite linear;
+}
+@keyframes glow-icon {
+    0% ,100% {
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.5,1.5);
+        box-shadow: 0 0 10px whitesmoke;
+        border: 3px dotted whitesmoke;
+
+    }
+}
+/*--------------------------Intro Section-----------------------------*/
+.intro-icon{
+    background-color: black;
+    color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+}
+
+
+/*--------------------------Gallery-----------------------------*/
+.gallery-img{
+    border-radius: 30px;
+    border: 5px solid lightgray;
+    box-shadow: 0 0 10px black;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.gallery-img:hover{
+    transform: scale(1.2,1.2);
+}
+/*--------------Learn More Section--------------------------------*/
+.btn-outline-white{
+    border: 3px solid whitesmoke; !important;
+}
+.btn-outline-white:hover{
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+/*--------------------Trainer Section-------------------------------*/
+.trainer-img{
+    box-shadow: 0 0 5px black;
+    margin-top: -70px;
+}
+.trainer-card{
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    transition: all 0.5s;
+    background-color: deepskyblue;
+}
+.trainer-card:hover{
+    transform: translateY(-10%);
+    background-color: darkslategrey;
+    color: antiquewhite;
+ }
+
+/*===================================================*/
+.google-map{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
